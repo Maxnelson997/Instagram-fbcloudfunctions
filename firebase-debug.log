@@ -1,0 +1,56 @@
+[debug] [2017-12-27T01:36:30.008Z] ----------------------------------------------------------------------
+[debug] [2017-12-27T01:36:30.010Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only functions:observeFollowing
+[debug] [2017-12-27T01:36:30.010Z] CLI Version:   3.16.0
+[debug] [2017-12-27T01:36:30.011Z] Platform:      darwin
+[debug] [2017-12-27T01:36:30.011Z] Node Version:  v8.9.1
+[debug] [2017-12-27T01:36:30.011Z] Time:          Tue Dec 26 2017 18:36:30 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:30.011Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-27T01:36:30.023Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-27T01:36:30.023Z] > authorizing via signed-in user
+[debug] [2017-12-27T01:36:30.024Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/instagramfirebasecourse  
+  
+ Tue Dec 26 2017 18:36:30 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:30.535Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-27T01:36:30.536Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/instagramfirebasecourse/tokens  
+  
+ Tue Dec 26 2017 18:36:30 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:31.022Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'instagramfirebasecourse'...
+[info] 
+[info] i  deploying functions
+[debug] [2017-12-27T01:36:31.445Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2017-12-27T01:36:31.446Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/instagramfirebasecourse?view=CONSUMER_VIEW  
+  
+ Tue Dec 26 2017 18:36:31 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:31.447Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/instagramfirebasecourse?view=CONSUMER_VIEW  
+  
+ Tue Dec 26 2017 18:36:31 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:32.106Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-27T01:36:32.150Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-12-27T01:36:32.152Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/instagramfirebasecourse  
+  
+ Tue Dec 26 2017 18:36:32 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:32.152Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/instagramfirebasecourse/apiKeys  
+  
+ Tue Dec 26 2017 18:36:32 GMT-0700 (MST)
+[debug] [2017-12-27T01:36:32.436Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-27T01:36:32.640Z] <<< HTTP RESPONSE 200
